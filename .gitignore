@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+*.blend1
+old_tests/
+old_warrior_files/
+official_warrior_test.py
+requirements_before_gltf_test.txt
+game_log.txt

@@ -633,7 +633,6 @@ The game includes:
 - Game timer
 - PLAY control
 - Dynamic lighting
-- Night-sky environment
 - Custom target visuals
 
 ---
@@ -709,6 +708,7 @@ The arena is built using Panda3D.
 
 The visual environment includes:
 
+- 3D arena ground
 - 3D warrior models
 - Bow-equipped warrior assets
 - Gem-like targets
@@ -716,7 +716,6 @@ The visual environment includes:
 - Dynamic lighting
 - Ambient lighting
 - Directional lighting
-- Night-sky background
 - Custom target gradients
 - Faceted target appearance
 
@@ -868,10 +867,16 @@ AI-Archer-Arena/
 - 3D asset integration
 
 **Asset Pipeline**
+
+- VRoid Studio
+- VRM character creation and `.vrm` export
 - Blender
-- GLB/glTF
 - Warrior model preparation
-- Texture and material integration
+- Bow integration
+- Character animation and animation setup
+- Texture and material preparation
+- GLB/glTF export
+- Panda3D runtime integration
 
 **Development Tools**
 - Visual Studio Code
@@ -925,7 +930,7 @@ Dependency versions may vary depending on the local Python and Panda3D environme
 From the project root:
 
 ```bash
-python main.py
+python game_controller.py
 ```
 
 ---
@@ -1051,6 +1056,31 @@ Next Decision
 The agents therefore operate through a decision-oriented architecture instead of a simple predefined action sequence.
 
 ---
+
+## 🌍 Potential Real-World Applications
+
+Although AI Archer Arena is developed as a 3D autonomous-agent simulation, its underlying decision-making architecture demonstrates concepts that can be applied to broader real-world AI systems.
+
+Potential applications include:
+
+- **Autonomous Decision-Making** — Systems that must evaluate multiple possible actions and select the most suitable one based on reward, risk, and current environmental conditions.
+
+- **Multi-Agent Systems** — Environments where multiple autonomous agents interact, compete, cooperate, or respond to one another.
+
+- **Robotics & Autonomous Systems** — Decision-making architectures where an autonomous system must evaluate distance, movement, uncertainty, and action outcomes before acting.
+
+- **Game AI** — Intelligent NPCs and agents that make context-aware decisions instead of following only fixed scripted behavior.
+
+- **AI Simulation & Research** — Controlled environments for experimenting with utility functions, heuristic decision-making, risk modeling, prediction, and adaptive strategies.
+
+- **Agent Benchmarking** — Comparing different autonomous-agent personalities, policies, and decision strategies under the same environment.
+
+- **Risk/Reward Optimization** — Systems where selecting the highest-value action is not always optimal because probability of success, cost, risk, and time must also be considered.
+
+- **Real-Time Intelligent Systems** — Applications where an agent continuously observes changing environmental state, makes a decision, performs an action, evaluates the outcome, and makes the next decision.
+
+> **Note:** These are potential application areas of the underlying concepts demonstrated by the project and are not claims that the current application is deployed in these domains.
+
 
 ## 🔬 AI Approach
 
@@ -1424,8 +1454,12 @@ The project demonstrates how lightweight, interpretable decision mechanisms can 
 - Git version control
 - GitHub repository management
 - Git LFS
-- Blender asset pipeline
+- VRoid Studio character creation
+- VRM character workflow
+- Blender asset preparation and animation
+- Bow integration
 - GLB/glTF integration
+- Texture and material preparation
 - Debugging
 - Iterative development
 
@@ -1460,7 +1494,7 @@ pip install panda3d-gltf
 Run the application:
 
 ```bash
-python main.py
+python game_controller.py
 ```
 
 ---
@@ -1475,23 +1509,40 @@ GitHub: [AI Archer Arena Repository](https://github.com/neethukrishna112/AI-Arch
 
 **S. NEETHU KRISHNAN**
 
-Computer Science & Engineering
+**B.Tech Computer Science & Engineering | 2022–2026**
+
+Aspiring Software Engineer with interests in Artificial Intelligence, Autonomous Systems, Python Development, and Software Engineering.
+
+### 🔗 Profiles
+
+- **GitHub:** https://github.com/neethukrishna112
+- **LinkedIn:** https://www.linkedin.com/in/s-neethu-krishnan-42957b344/
 
 Areas of interest:
 
 - Artificial Intelligence
 - Autonomous Systems
+- Intelligent Decision Systems
 - Python Development
 - Software Engineering
-- Intelligent Decision Systems
 - 3D Simulation
 - Backend Development
+- Real-Time Applications
 
----
+This project reflects hands-on experience in:
+
+- Autonomous agent design
+- Utility-based decision systems
+- Object-oriented Python
+- Real-time 3D application development
+- Panda3D
+- AI-driven simulation
+- Git & GitHub
+- Blender-based 3D asset pipelines
 
 
 ## ⭐ Final Note
 
 If you find the project interesting, consider starring the repository and exploring the implementation.
 
-**AI Archer Arena** — where two autonomous decision-making systems compete, adapt, and act in a real-time 3D world.
+**AI Archer Arena** — where two autonomous decision-making agents compete, adapt, and act in a real-time 3D world.
